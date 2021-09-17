@@ -283,7 +283,7 @@ const fetchData = () => {
     .then(data => {
       Object.keys(data).map(customData => {
         if (data[customData] !== "") {
-          if (customData === "imagePath") {
+          if (customData === "videoPath") {
             document
               .getElementById(customData)
               .setAttribute("src", data[customData]);
